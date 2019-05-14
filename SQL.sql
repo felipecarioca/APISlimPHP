@@ -1,0 +1,29 @@
+CREATE TABLE categoria (
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	descricao VARCHAR(56) NOT NULL DEFAULT ''
+);
+
+CREATE TABLE produto (
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	descricao VARCHAR(56) NOT NULL DEFAULT '',
+	preco DECIMAL(13, 2) NOT NULL DEFAULT 0,
+	id_categoria INT(11) NULL,
+	FOREIGN KEY (id_categoria) REFERENCES categoria(id)
+);
+
+
+CREATE TABLE usuario (
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(128) NOT NULL DEFAULT '',
+	login VARCHAR(16) NOT NULL DEFAULT '',
+	senha VARCHAR(16) NOT NULL DEFAULT ''
+);
+
+CREATE TABLE loja (
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	id_produto INT(11) NOT NULL,
+	proprietario INT(11) NOT NULL,
+	vendedor INT(11) NULL--,
+	--FOREIGN KEY (proprietario) REFERENCES usuario(id),
+	--FOREIGN KEY (vendedor) REFERENCES usuario(id)
+);
