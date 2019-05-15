@@ -6,7 +6,7 @@
 
     class UsuarioController{
         
-        //private $secretKey = "sen@c";
+        private $secretKey = "sen@c";
 
         public function inserir($request, $response, $args)
         {
@@ -18,8 +18,7 @@
         
             return $response->withJson($usuario, 201);
         }
-
-        /*
+        
         public function autenticar($request, $response, $args)
         {
             $user = $request->getParsedBody();
@@ -59,7 +58,7 @@
             
             return $response->withStatus(401);
         }
-        */
+        
     }
 
 ?>
