@@ -41,7 +41,7 @@
             $comando->execute();
 
 
-            return $categoria;        
+            return $categoria;
         }
 
         public function listar()
@@ -54,9 +54,9 @@
             $categorias=array();	
 		    
             while($row = $comando->fetch(PDO::FETCH_OBJ)){
-			    $categorias[] = new Categoria($row->id,$row->descricao);
+                $categorias[] = new Categoria($row->id,$row->descricao);
             }
-            
+
             return $categorias;
         }
 

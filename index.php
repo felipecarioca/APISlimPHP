@@ -11,9 +11,7 @@
 
 	$app = new \Slim\App;
 
-	// Categorias
-
-	/*
+	// Categorias	
 	$app->group('/categorias', function() use ($app) {
 	    $app->get('','CategoriaController:listar');
 	    $app->post('','CategoriaController:inserir');
@@ -22,7 +20,7 @@
 	    $app->put('/{id}','CategoriaController:atualizar');
 	    $app->delete('/{id}', 'CategoriaController:deletar');
 	});
-	*/	
+		
 
 	// Produtos
 

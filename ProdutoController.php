@@ -31,7 +31,8 @@ class ProdutoController {
         $produto = $dao->inserir($produto);
 
         // Inserindo o produto na tabela loja...
-        $loja = new Loja(0, $produto->id, $p['id_usuario'], 0);
+        //$loja = new Loja(0, $produto->id, $p['id_usuario'], 0);
+        $loja = new Loja(0, $produto->id, 1, 0);
 
         $lojaDao = new LojaDAO;
         $loja = $lojaDao->inserir($loja);

@@ -1,0 +1,135 @@
+@media screen and (max-width: 600px) {
+    
+    .conteudo {
+        padding: 2rem;
+    }
+
+    .coluna-produto{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .campo-formulario {
+        margin: 1em 0;
+    }
+
+    .campo-texto {
+        width: 90%;
+    }
+
+    .select {
+        width: 100% !important;
+    }
+
+    .escudo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 898px) {
+    .coluna-produto{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .escudo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 899px) {
+
+    aside {
+        position: fixed;
+        width: 100%;
+        height: 56px;
+        background-color: #42464c;
+    }
+
+    aside section {
+        float: left;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo {
+        float: left;
+        width: 30%;
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .logo img {
+        padding: 10px;
+        width: 160px;
+    }
+
+    .divisor {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        min-height: calc(100vh - 70);
+        margin-top: 56px;
+    }
+
+    nav {
+        float: left;
+        width: 70%;
+        text-align: right;
+    }
+
+    nav ul {
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        float: right;
+    }
+
+    nav ul li {
+        display: list-item;
+    }
+
+    nav ul li a {
+        padding-left: 1.1rem;
+    }
+
+    nav ul li a span {
+        display: none;
+    }
+
+    /*
+    aside .rodape {
+        float: left;
+        width: 20%;
+        height: 100%;
+        text-align: center;
+    }
+
+    aside .rodape input {
+        margin-top: 9px;
+    }
+    */
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1250px) 
+{
+    .coluna-produto{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

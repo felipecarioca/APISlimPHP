@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    letter-spacing: 1px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1F2024;
+}
+
+main {
+    width: calc(100% - 270px);
+    min-height: 100vh;
+    float: right;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: list-item;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav ul li a span {
+	vertical-align: middle;
+	margin-left: 0.7rem;
+}
+
+nav ul li a i {
+	vertical-align: middle;
+	font-size: 1.3rem;
+}
+
+nav ul li:hover {
+    background-color: black;
+    opacity: 0.5;
+    transition: all .4s;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.principal {
+    min-height: 100vh;
+    background-image: url(../imagens/background.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.centralizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.painel {
+    width: 80%;
+    height: 100px;
+    background-color: #2d2a2a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.aba {
+    height: 100vh;
+}
+
+aside {
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    float: left;
+    background-color: #42464c;
+}
+
+aside section {
+    height: calc(100vh - 4rem);
+}
+
+aside section h1 {
+    width: 100%;
+    margin: auto;
+    font-size: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+aside section div {
+	width: 80%; 
+	margin: auto;
+	position: relative;
+}
+
+aside section label {
+	color: white;
+	position: relative;
+}
+
+
+aside .rodape {
+	height: 4rem;
+    text-align: center;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.campo-texto {
+    position: relative;
+    width: 80%;
+    padding: 0.375rem 0.75rem;
+    margin-top: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 2px solid #4D8CB7;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.campo-texto:focus {
+    border-color: #7fbee8;
+    outline: 0;
+}
+
+.texto {
+    height: 20rem;
+}
+
+.logo {
+    width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.escudo {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.escudo img {
+    height: 100%;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #4d8cb7;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.botao:active {
+    outline: 0;
+    opacity: 0.5;
+    transition: 0.1s;
+}
+
+.btn-logout {
+    width: 80%;
+}
+
+.conteudo {
+	padding: 4rem;
+}
+
+.conteudo h1 {
+	padding-bottom: 1rem;
+}
+
+.titulo {
+	border-bottom: 6px solid #4d8cb7;
+}
+
+.campo-formulario {
+	box-sizing: border-box;
+    border: 1px #ddd solid;
+    padding: 10px;
+    height: 10rem;
+    margin: 1em;
+}
+
+
+
+.error-msg {
+    color: #994C33; 
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.banner {
+    margin-top: 10vh;
+    height: 50vh;
+    position: absolute;
+}
+
+.select {
+    width: 90% !important;
+}
+
+.secao {
+    box-sizing: border-box;
+    height: 20vh;
+    margin-bottom: 2rem;
+    font-size: 10vh;
+    text-shadow: 0 0 8px #000;
+    text-align: right;
+    cursor: pointer;
+}
+
+.secao span {
+    box-sizing: border-box;
+    padding-right: 2rem;
+    vertical-align: middle;
+    color: #4d8cb7;
+    display: block;
+    height: 100%;
+}
+
+.secao:hover {
+    opacity: 0.8;
+    transition: .8s;
+}
+
+.produto {
+    border: 2px solid red;
+}

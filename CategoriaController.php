@@ -8,7 +8,7 @@ class CategoriaController {
     public function listar($request, $response, $args) {
         $dao= new CategoriaDAO;    
         $categorias =  $dao->listar();
-                
+        
         return $response->withJson($categorias);    
     }
     

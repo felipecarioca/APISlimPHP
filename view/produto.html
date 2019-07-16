@@ -1,0 +1,25 @@
+<section class="conteudo">
+    <div class="titulo">
+        <h1 id="tituloPagina">Incluir Produto</h1>
+    </div>
+	<form method="post" id="formIncluir">
+        <input type="hidden" name="id" id="id" value="">
+        <div class="formulario">
+            <div class="coluna-produto" style="margin-top: 20px;">
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" id="descricao" class="campo-texto">
+            </div>
+            <div class="coluna-produto" style="margin-top: 20px;">
+                <label for="preco">Preço</label>
+                <input type="text" name="preco" id="preco" class="campo-texto">
+            </div>
+            <div class="coluna-produto" style="margin-top: 20px;">
+                <label for="id_categoria">Categoria</label>
+                <select name="id_categoria" id="id_categoria" class="campo-texto select"></select>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <input type="submit" name="salvar" value="Salvar" class="botao">
+        </div>
+    </form>
+</section>
